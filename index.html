@@ -1,94 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SPHINOX Vively｜科友實業原料資訊</title>
-<meta name="description" content="SPHINOX Vively 類A鞘脂｜科友實業股份有限公司原料資訊">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --accent:#6a4868;
-    --brand:#4b6b45;
-    --paper:#fbf8f1;
-    --ink:#2f2f2a;
-    --muted:#6d6a60;
-    --line:#e4ddcc;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
-    background:var(--paper);color:var(--ink);line-height:1.7;
-    padding-bottom:env(safe-area-inset-bottom,0px);
-  }
-  header{
-    background:#fff;border-bottom:1px solid var(--line);
-    padding:calc(14px + env(safe-area-inset-top,0px)) 20px 14px;
-    display:flex;justify-content:center;
-  }
-  header img{height:34px;width:auto;max-width:100%}
-  .hero{
-    background:var(--accent);color:#fff;text-align:center;
-    padding:40px 20px 44px;
-  }
-  .badge{
-    display:inline-block;font-size:13px;letter-spacing:.08em;
-    border:1px solid rgba(255,255,255,.6);border-radius:999px;
-    padding:3px 14px;margin-bottom:14px;
-  }
-  .hero h1{font-size:clamp(28px,8vw,44px);font-weight:700;line-height:1.2;letter-spacing:.01em}
-  .hero .sub{margin-top:10px;font-size:clamp(16px,4.6vw,20px);font-weight:500;opacity:.92}
-  .content{max-width:760px;margin:0 auto;padding:24px 16px 40px}
-  .notice{
-    font-size:13.5px;color:var(--muted);background:#fff;
-    border-left:4px solid var(--accent);border-radius:6px;
-    padding:12px 14px;margin-bottom:22px;
-  }
-  .content figure{margin-bottom:22px}
-  .content img{
-    display:block;width:100%;max-width:100%;height:auto;
-    border-radius:10px;background:#fff;
-    box-shadow:0 1px 0 var(--line),0 6px 18px rgba(60,50,20,.08);
-  }
-  .content figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
-  footer{
-    background:var(--brand);color:#fff;text-align:center;
-    font-size:13.5px;padding:22px 16px calc(22px + env(safe-area-inset-bottom,0px));
-    line-height:1.9;
-  }
-  footer a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-  footer strong{font-size:15px;font-weight:700}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPHINOX VIVELY｜科友實業股份有限公司</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; background: #fbf8e0; color: #333; }
+    header { background: #ffffff; padding: 16px 28px; display: flex; align-items: center; border-bottom: 3px solid #01ab35; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    header img.logo { height: 64px; object-fit: contain; }
+    .hero { background: linear-gradient(135deg, #54714e 0%, #01ab35 100%); padding: 36px 24px 44px; text-align: center; }
+    .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); color: #fff; font-size: 0.75rem; padding: 4px 16px; border-radius: 20px; letter-spacing: 2px; margin-bottom: 14px; }
+    .hero h1 { color: #fff; font-size: 2.2rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
+    .hero .sub { color: rgba(255,255,255,0.85); font-size: 1rem; }
+    .content { max-width: 720px; margin: 0 auto; padding: 28px 18px 40px; }
+    .section-label { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: #54714e; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: #96d000; opacity: 0.5; }
+    .card { background: #fff; border-radius: 16px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 2px 14px rgba(0,0,0,0.07); }
+    .card-header { background: #54714e; color: #fff; padding: 12px 20px; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+    .card-header .dot { width: 8px; height: 8px; border-radius: 50%; background: #96d000; display: inline-block; }
+    .card img.material-img { width: 100%; display: block; }
+    .notice { background: #fff8e8; border-left: 4px solid #feb500; border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 0.8rem; color: #666; margin-bottom: 24px; line-height: 1.6; }
+    footer { background: #54714e; color: rgba(255,255,255,0.75); text-align: center; padding: 22px 16px; font-size: 0.8rem; line-height: 1.8; }
+    footer strong { color: #fff; font-size: 0.9rem; }
+    footer .divider { margin: 0 8px; opacity: 0.4; }
+    @media (max-width: 480px) { .hero h1 { font-size: 1.6rem; } header img.logo { height: 48px; } }
+  </style>
 </head>
 <body>
-<header>
-  <img src="20230515科友LOGO_logo_中文全名標準字.png" alt="科友實業股份有限公司 KOSFARM CORPORATION">
-</header>
-
-<div class="hero">
-  <div class="badge">原料樣品資訊</div>
-  <h1>SPHINOX Vively</h1>
-  <div class="sub">類A鞘脂</div>
-</div>
-
-<div class="content">
-  <!-- ⚠️ 警語不可刪 -->
-  <div class="notice">以下原料資訊依原廠資料整理提供，僅供化妝品產業人士參考，非供一般消費者，產品訴求請參照政府相關法規；請勿任意轉載。</div>
-  <figure>
-    <img src="Vively_EDM.jpg" alt="SPHINOX Vively 原料重點介紹">
-  </figure>
-  <figure>
-    <img src="Vively_datasheet_cropped.png" alt="SPHINOX Vively 原料特性資料（中文單張）">
-    <figcaption>點兩下或雙指放大可查看完整規格</figcaption>
-  </figure>
-</div>
-
-<footer>
-  <strong>科友實業股份有限公司</strong><br>
-  TEL：<a href="tel:+886222232999">02-2223-2999</a>　FAX：02-8221-6326
-</footer>
+  <header>
+    <img class="logo" src="https://kosfarm.github.io/kosfarm-covertrix/20230515科友LOGO_logo_中文全名標準字.png" alt="科友實業股份有限公司" />
+  </header>
+  <div class="hero">
+    <div class="badge">原料樣品資訊</div>
+    <h1>SPHINOX VIVELY</h1>
+    <div class="sub">類A鞘脂</div>
+  </div>
+  <div class="content">
+    <div class="notice">以下原料資訊依原廠資料整理提供，僅供化妝品產業人士參考，非供一般消費者。產品訴求請參照政府相關法規，請勿任意轉載。</div>
+    <div class="section-label">原料 EDM</div>
+    <div class="card">
+      <div class="card-header"><span class="dot"></span> 產品行銷文件</div>
+      <img class="material-img" src="Vively_EDM.jpg" alt="SPHINOX Vively EDM" />
+    </div>
+    <div class="section-label">原料中文單張</div>
+    <div class="card">
+      <div class="card-header"><span class="dot"></span> 中文產品說明</div>
+      <img class="material-img" src="Vively_datasheet_cropped.png" alt="SPHINOX Vively 中文單張" />
+    </div>
+  </div>
+  <footer>
+    <strong>科友實業股份有限公司</strong><br>
+    TEL：02-2223-2999<span class="divider">|</span>FAX：02-8221-6326<br>
+    <span style="font-size:0.72rem; opacity:0.5; margin-top:4px; display:block;">© 2025 KOSFARM. All rights reserved.</span>
+  </footer>
 </body>
 </html>
